@@ -94,3 +94,12 @@ urlpatterns = [
 # 其中 views.XX，的 XX 是 app views.py 中的类
 
 ``` 
+
+# redis
+
+```
+URL: /redis
+GET: keys list; &key=xx, get key value
+POST: key and val set key-val
+DELETE: delete all keys
+```
