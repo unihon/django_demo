@@ -15,12 +15,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 ```
 ALLOWED_HOSTS = ['dev.env','localhost','127.0.0.1']
 ```
-项目的 host 白名单；
-一个开发建议是通过配置电脑本地的 hosts 文件。
 
-`127.0.0.1    dev.env`
-
-这样，开发时就可以统一的用 dev.env 这个内部域名，也比较方便。
+项目的 host 白名单
 
 ## INSTALLED_APPS
 
@@ -95,6 +91,6 @@ urlpatterns = [
 
 ]
 
-其中 views.XX，的 XX 是 app views.py 中的类
+# 其中 views.XX，的 XX 是 app views.py 中的类
 
 ``` 
