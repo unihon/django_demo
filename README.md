@@ -71,3 +71,30 @@ REST_FRAMEWORK = {
     }
 ]
 ```
+
+# 基本流程
+
+```
+# 创建 app
+python manage.py startapp appname
+
+# 给 app 添加一个 urls.py
+# 在项目目录的 urls.py 中引入 app 的 urls.py
+
+from django.urls import include, path
+urlpatterns = [
+        path('apppath', include('appname.urls')),
+
+# 编写 app 的 urls.py
+
+from django.urls import path
+from . import views
+urlpatterns = [
+    path('', views.Apple.as_view()),
+    path('object', views.Sydney.as_view()),
+
+]
+
+其中 views.XX，的 XX 是 app views.py 中的类
+
+``` 

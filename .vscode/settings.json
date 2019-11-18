@@ -1,3 +1,3 @@
 {
-    "python.pythonPath": "/root/dev/npy/bin/python"
+    "python.pythonPath": "/usr/local/stow/dev-py/bin/python"
 }
