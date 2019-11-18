@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 ## ALLOWED_HOSTS
 
 ```
-ALLOWED_HOSTS = ['dev.env','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 ```
 
 项目的 host 白名单
@@ -32,8 +32,8 @@ INSTALLED_APPS = [
         ]
 ```
 
-不用 admin apps，添加 rest_framework；
-如果自己的 app 用到模型，同样的也是在这里加，直接写 app 名。
+不用 admin apps，添加 rest_framework；  
+如果自己的 app 用到模型，同样的也是在这里加，直接写 app 名
 
 ## DRF
 
@@ -70,7 +70,7 @@ REST_FRAMEWORK = {
 
 # 基本流程
 
-```
+``` python
 # 创建 app
 python manage.py startapp appname
 
